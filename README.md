@@ -6,13 +6,15 @@ The featured project is *Structured Literacy in Practice: Demonstrating a Lesson
 
 ## Project Context
 
-**Client:** San Juan College
+**Client:** San Juan College Teacher Education Department
 **Role:** Instructional Video Developer – Educator Preparation (Contract)
 **Project period:** March–June 2026
 
-The video demonstrates the sequence of a structured literacy mini-lesson, including review, explicit modeling, guided practice, corrective feedback, and application.
+I was selected by the San Juan College Teacher Education Department to develop two instructional videos for its educator preparation resource library. The videos were created to support the preparation of future educators by modeling effective instructional practices in structured literacy and evidence-based reading instruction.
 
-My responsibilities included instructional planning, script development, voice production, audio editing, visual production, synchronization, and final delivery.
+The video featured in this case study demonstrates the sequence of a structured literacy mini-lesson, including review, explicit modeling, guided practice, corrective feedback, and application.
+
+My responsibilities included instructional planning, script development, voice production, audio editing, visual production, synchronization, quality review, and final delivery.
 
 ## Voice Production Workflow
 
