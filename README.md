@@ -71,6 +71,8 @@ The main evaluation criteria included:
 * Synchronization with the visual lesson
 * Overall clarity and naturalness
 
+See the [Voice Production Quality Review Framework](docs/voice-production-quality-review-framework.md) for the review criteria used across voice performance, editing, technical quality, instructional clarity, and final delivery.
+
 ## Tools Used
 
 * ElevenLabs
