@@ -87,7 +87,7 @@ See the [Voice Production Quality Review Framework](docs/voice-production-qualit
 
 ## Planned Additions
 
-This case study will be expanded with selected waveform screenshots, short editing examples, additional production notes, and quality-control documentation.
+This case study will be expanded with selected editing examples and production notes documenting key decisions in voice-clone recording, narration assembly, dialogue editing, cleanup, and final audiovisual integration.
 
 ## Portfolio Note
 
