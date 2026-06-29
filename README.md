@@ -38,6 +38,8 @@ The production process involved:
 * Reducing distracting breaths, mouth noises, and other generated artifacts
 * Synchronizing the completed narration with graphics and instructional demonstrations
 
+See the [Voice-Clone Source Recording and Performance Notes](docs/voice-clone-source-recording-and-performance-notes.md) for additional detail on source capture, instructional delivery, script selection, model testing, and post-production.
+
 I also used ElevenLabs to create the short educational music audio tag used at the beginning and end of the video, along with a subtle ambient musical sound bed.
 
 ### Human-recorded lesson dialogue
