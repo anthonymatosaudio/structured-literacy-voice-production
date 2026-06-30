@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TTS Narration Editing Comparison</title>
+
+  <style>
+    :root {
+      --page-background: #f5f6f8;
+      --surface: #ffffff;
+      --text: #1f2328;
+      --secondary-text: #59636e;
+      --border: #d8dee4;
+      --accent: #0969da;
+      --soft-accent: #eef5ff;
+      --quote-border: #8c959f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page-background);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(960px, calc(100% - 32px));
+      margin: 40px auto;
+      padding: 48px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 8px 28px rgba(31, 35, 40, 0.08);
+    }
+
+    header {
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 28px;
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .eyebrow {
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 5vw, 3.15rem);
+      line-height: 1.12;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 1.55rem;
+      line-height: 1.25;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 1.12rem;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    .lede {
+      max-width: 760px;
+      margin: 0;
+      color: var(--secondary-text);
+      font-size: 1.12rem;
+    }
+
+    section {
+      padding-top: 38px;
+    }
+
+    blockquote {
+      margin: 0;
+      padding: 18px 22px;
+      background: #f6f8fa;
+      border-left: 4px solid var(--quote-border);
+      border-radius: 0 8px 8px 0;
+      color: #3d444d;
+    }
+
+    .comparison-note {
+      padding: 14px 16px;
+      background: var(--soft-accent);
+      border: 1px solid #b6d7ff;
+      border-radius: 8px;
+      color: #344054;
+      font-size: 0.95rem;
+    }
+
+    .audio-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 22px;
+    }
+
+    .audio-card {
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #fbfcfd;
+    }
+
+    .audio-card p {
+      color: var(--secondary-text);
+      font-size: 0.95rem;
+    }
+
+    audio {
+      display: block;
+      width: 100%;
+      margin: 18px 0 12px;
+    }
+
+    .file-link {
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .file-link:hover {
+      text-decoration: underline;
+    }
+
+    figure {
+      margin: 22px 0 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      color: var(--secondary-text);
+      font-size: 0.9rem;
+    }
+
+    .decision-list {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .decision-list li {
+      margin-bottom: 14px;
+    }
+
+    .result {
+      margin-top: 38px;
+      padding: 28px;
+      background: #f6f8fa;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    .result h2 {
+      margin-top: 0;
+    }
+
+    footer {
+      margin-top: 42px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--secondary-text);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 20px, 960px);
+        margin: 10px auto;
+        padding: 26px 20px;
+      }
+
+      .audio-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <main>
+    <a class="back-link" href="./">← Back to project overview</a>
+
+```
+<header>
+  <div class="eyebrow">Structured Literacy Voice Production</div>
+
+  <h1>TTS Narration Editing Comparison</h1>
+
+  <p class="lede">
+    A focused example of cadence refinement, breath editing, and
+    alternate-generation assembly within an ElevenLabs narration workflow.
+  </p>
+</header>
+
+<section>
+  <h2>Passage</h2>
+
+  <blockquote>
+    “An intentional sequence created opportunities to use the target pattern
+    across increasingly connected reading tasks. ‘Sounding and Blending’
+    supported guided decoding, the ‘One-Minute Challenge’ supported
+    independent decoding, and ‘Shared Reading’ included both supported and
+    independent sentence reading.”
+  </blockquote>
+</section>
+
+<section>
+  <h2>Audio Comparison</h2>
+
+  <p>
+    The source generation contained a strong overall performance, but several
+    extended pauses interrupted the forward movement of the explanation. The
+    final section was also stronger in an alternate generation.
+  </p>
+
+  <p class="comparison-note">
+    For a fair comparison, the outer boundaries of the source excerpt were
+    trimmed and its overall level was matched to the completed passage.
+    Internal timing, pauses, and breaths were left unchanged.
+  </p>
+
+  <div class="audio-grid">
+    <article class="audio-card">
+      <h3>1. Source Generation</h3>
+
+      <p>
+        Original internal timing and breath placement before cadence
+        refinement and alternate-take assembly.
+      </p>
+
+      <audio controls preload="metadata">
+        <source
+          src="assets/audio/01-lesson-sequence-source-generation.mp3"
+          type="audio/mpeg">
+        Your browser does not support embedded audio playback.
+      </audio>
+
+      <a
+        class="file-link"
+        href="assets/audio/01-lesson-sequence-source-generation.mp3">
+        Open source audio file
+      </a>
+    </article>
+
+    <article class="audio-card">
+      <h3>2. Final Edited Narration</h3>
+
+      <p>
+        Completed four-segment assembly with shortened pauses, shaped breath
+        transitions, and a stronger alternate-generation ending.
+      </p>
+
+      <audio controls preload="metadata">
+        <source
+          src="assets/audio/02-lesson-sequence-final-edit.mp3"
+          type="audio/mpeg">
+        Your browser does not support embedded audio playback.
+      </audio>
+
+      <a
+        class="file-link"
+        href="assets/audio/02-lesson-sequence-final-edit.mp3">
+        Open final audio file
+      </a>
+    </article>
+  </div>
+</section>
+
+<section>
+  <h2>Timeline Overview</h2>
+
+  <p>
+    The completed passage was assembled from four narration segments within
+    the full audiovisual timeline. The first two edits refined pause length
+    and breath timing; the third introduced the stronger ending from an
+    alternate generation.
+  </p>
+
+  <figure>
+    <img
+      src="assets/images/01-lesson-sequence-tts-edit-overview.png"
+      alt="Final Cut Pro timeline showing four assembled TTS narration segments beneath the synchronized instructional video timeline.">
+
+    <figcaption>
+      Final Cut Pro overview showing the four-segment narration assembly in
+      context with the corresponding instructional visuals.
+    </figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>Editing Decisions</h2>
+
+  <ul class="decision-list">
+    <li>
+      <strong>Cadence refinement:</strong>
+      The extended pauses after “reading tasks” and “guided decoding” were
+      shortened so the explanation continued naturally without sounding
+      rushed.
+    </li>
+
+    <li>
+      <strong>Breath preservation:</strong>
+      Excess breath length was removed, but the breaths were not eliminated.
+      Short fades retained the sound of natural phrase transitions rather
+      than creating abrupt cuts or dead silence.
+    </li>
+
+    <li>
+      <strong>Alternate-generation selection:</strong>
+      The final portion was replaced with material from another generation
+      that delivered the ending more effectively.
+    </li>
+
+    <li>
+      <strong>Breath-splice construction:</strong>
+      Breath material from the outgoing and incoming generations was trimmed
+      and shaped with a short fade-out and fade-in so the transition functioned
+      as one cohesive breath.
+    </li>
+
+    <li>
+      <strong>Level matching:</strong>
+      No localized volume automation was necessary. A uniform gain adjustment
+      of +3 dB was applied across the four completed segments to match the
+      surrounding narration.
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Breath-Splice Detail</h2>
+
+  <p>
+    The close-up below shows the transition into the alternate-generation
+    ending. The outgoing breath was shortened and faded out while the incoming
+    breath was faded in quickly enough to preserve continuity between the two
+    performances.
+  </p>
+
+  <figure>
+    <img
+      src="assets/images/02-lesson-sequence-breath-splice-detail.png"
+      alt="Close-up of a Final Cut Pro narration splice showing the waveform transition and short fade between two generated takes.">
+
+    <figcaption>
+      Detailed waveform view of the edit joining the original segment to the
+      stronger alternate-generation ending.
+    </figcaption>
+  </figure>
+</section>
+
+<section class="result">
+  <h2>Result</h2>
+
+  <p>
+    The completed edit reduced the passage from 17.43 seconds to 15.10 seconds
+    while preserving the same spoken content. The revised cadence kept the
+    explanation moving, and the retained breath transitions prevented the
+    assembled narration from sounding mechanically cut together.
+  </p>
+
+  <p>
+    This type of refinement was used throughout the project when a generation
+    was otherwise effective but required timing, breath, or continuity
+    adjustments to fit the instructional flow of the finished video.
+  </p>
+</section>
+
+<footer>
+  Prepared as part of an independent portfolio case study documenting
+  AI-assisted voice production, editorial decision-making, and audio
+  post-production.
+</footer>
+```
+
+  </main>
+</body>
+</html>
