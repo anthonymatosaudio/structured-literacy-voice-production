@@ -75,6 +75,20 @@ The main evaluation criteria included:
 
 See the [Voice Production Quality Review Framework](docs/voice-production-quality-review-framework.md) for the review criteria used across voice performance, editing, technical quality, instructional clarity, and final delivery.
 
+## Selected Before-and-After Editing Example
+
+### [TTS Narration Editing Comparison →](https://anthonymatosaudio.github.io/structured-literacy-voice-production/tts-narration-editing-comparison.html)
+
+<p align="center">
+  <a href="https://anthonymatosaudio.github.io/structured-literacy-voice-production/tts-narration-editing-comparison.html">
+    <img src="assets/images/01-lesson-sequence-tts-edit-overview.png"
+         alt="Final Cut Pro timeline showing a four-segment TTS narration edit"
+         width="640">
+  </a>
+</p>
+
+**Playable before-and-after narration** with Final Cut Pro screenshots showing pacing refinement, breath editing, and alternate-generation assembly.
+
 ## Tools Used
 
 * ElevenLabs
