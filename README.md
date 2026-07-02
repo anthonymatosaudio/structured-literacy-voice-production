@@ -48,7 +48,9 @@ The lesson included isolated phonemes and pronunciation demonstrations that requ
 
 After testing several text-to-speech approaches, I decided that recording this portion with human voices would produce a clearer and more dependable result. I performed the teacher role, while a colleague recorded the student responses.
 
-I edited the recordings in Logic Pro by selecting and combining takes, trimming excessive breaths and mouth noises, improving continuity between edits, and applying EQ and compression before integrating the dialogue into the video.
+I edited the human-recorded dialogue in Logic Pro by selecting and combining takes, refining timing and continuity between edits, and trimming excessive breaths and mouth noises. I applied a high-pass (low-cut) filter to both the teacher and student channel strips to remove unnecessary low-frequency rumble and buildup while leaving the rest of the tonal balance largely unchanged.
+
+To give the assembled dialogue a more controlled and consistent presentation, I applied light compression on the Logic Pro master bus. The compression reduced level variation, but it also made some remaining low-level mouth noises and breaths between phonemes more noticeable. After importing the processed dialogue into Final Cut Pro, I used localized volume automation to attenuate those artifacts while preserving the intended phonemes, timing, and synchronization.
 
 ## Key Production Decision
 
