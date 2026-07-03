@@ -107,6 +107,8 @@ See the [Voice Production Quality Review Framework](docs/voice-production-qualit
 
 This case study will be expanded with selected editing examples and production notes documenting key decisions in voice-clone recording, narration assembly, dialogue editing, cleanup, and final audiovisual integration.
 
+The next addition will be a multi-stage comparison of an independent-reading portion of the lesson, documenting Logic Pro comping and processing, the trade-off between improved vocal presence and low-level mouth noise made more noticeable after compression, and selective cleanup in Final Cut Pro.
+
 ## Portfolio Note
 
 This is an independent portfolio case study documenting my production process. It does not imply endorsement by San Juan College.
