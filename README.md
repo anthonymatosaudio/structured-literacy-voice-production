@@ -1,8 +1,8 @@
 # Structured Literacy Voice Production
 
-This case study provides an initial overview of how I combined ElevenLabs-generated narration with human-recorded instructional dialogue to produce a structured literacy training video for San Juan College.
+This audio-production case study documents how I combined ElevenLabs-generated narration with human-recorded instructional dialogue, voice editing, and audiovisual post-production to produce a structured literacy training video commissioned by San Juan College.
 
-The featured project is *Structured Literacy in Practice: Demonstrating a Lesson Sequence (Mini-Lesson Format)*, one of two commissioned Science of Reading videos developed for the San Juan College Teacher Education Department’s educator preparation resource library.
+The featured project, *Structured Literacy in Practice: Demonstrating a Lesson Sequence (Mini-Lesson Format)*, is one of two Science of Reading videos developed for the San Juan College Teacher Education Department’s educator-preparation resource library.
 
 ## Project Context
 
@@ -19,6 +19,34 @@ My responsibilities included instructional planning, script development, voice p
 ## Project Outcome
 
 Both commissioned videos were completed, reviewed, and accepted by San Juan College for its educator-preparation resource library.
+
+## Featured Audio Editing Comparisons
+
+The following playable comparisons document specific editing and processing decisions from the completed production.
+
+### [TTS Narration Editing Comparison →](https://anthonymatosaudio.github.io/structured-literacy-voice-production/tts-narration-editing-comparison.html)
+
+<p align="center">
+  <a href="https://anthonymatosaudio.github.io/structured-literacy-voice-production/tts-narration-editing-comparison.html">
+    <img src="assets/images/01-lesson-sequence-tts-edit-overview.png"
+         alt="Final Cut Pro timeline showing a four-segment TTS narration edit"
+         width="640">
+  </a>
+</p>
+
+**Playable before-and-after narration** with Final Cut Pro screenshots showing pacing refinement, breath editing, and alternate-generation assembly.
+
+### [Multi-Stage Dialogue Cleanup Comparison →](https://anthonymatosaudio.github.io/structured-literacy-voice-production/multi-stage-dialogue-cleanup-comparison.html)
+
+<p align="center">
+  <a href="https://anthonymatosaudio.github.io/structured-literacy-voice-production/multi-stage-dialogue-cleanup-comparison.html">
+    <img src="assets/images/multi-stage-dialogue-cleanup/02-independent-reading-logic-processing-overview.png"
+         alt="Logic Pro session showing the independent-reading dialogue comparison and processing workflow"
+         width="640">
+  </a>
+</p>
+
+**Playable three-stage dialogue comparison** with Logic Pro and Final Cut Pro screenshots showing high-pass filtering, light bus compression, and selective volume automation.
 
 ## Voice Production Workflow
 
@@ -76,32 +104,6 @@ The main evaluation criteria included:
 * Overall clarity and naturalness
 
 See the [Voice Production Quality Review Framework](docs/voice-production-quality-review-framework.md) for the review criteria used across voice performance, editing, technical quality, instructional clarity, and final delivery.
-
-## Selected Audio Editing Comparisons
-
-### [TTS Narration Editing Comparison →](https://anthonymatosaudio.github.io/structured-literacy-voice-production/tts-narration-editing-comparison.html)
-
-<p align="center">
-  <a href="https://anthonymatosaudio.github.io/structured-literacy-voice-production/tts-narration-editing-comparison.html">
-    <img src="assets/images/01-lesson-sequence-tts-edit-overview.png"
-         alt="Final Cut Pro timeline showing a four-segment TTS narration edit"
-         width="640">
-  </a>
-</p>
-
-**Playable before-and-after narration** with Final Cut Pro screenshots showing pacing refinement, breath editing, and alternate-generation assembly.
-
-### [Multi-Stage Dialogue Cleanup Comparison →](https://anthonymatosaudio.github.io/structured-literacy-voice-production/multi-stage-dialogue-cleanup-comparison.html)
-
-<p align="center">
-  <a href="https://anthonymatosaudio.github.io/structured-literacy-voice-production/multi-stage-dialogue-cleanup-comparison.html">
-    <img src="assets/images/multi-stage-dialogue-cleanup/02-independent-reading-logic-processing-overview.png"
-         alt="Logic Pro session showing the independent-reading dialogue comparison and processing workflow"
-         width="640">
-  </a>
-</p>
-
-**Playable three-stage dialogue comparison** with Logic Pro and Final Cut Pro screenshots showing high-pass filtering, light bus compression, and selective volume automation.
 
 ## Tools Used
 
