@@ -77,7 +77,7 @@ The main evaluation criteria included:
 
 See the [Voice Production Quality Review Framework](docs/voice-production-quality-review-framework.md) for the review criteria used across voice performance, editing, technical quality, instructional clarity, and final delivery.
 
-## Selected Before-and-After Editing Example
+## Selected Audio Editing Comparisons
 
 ### [TTS Narration Editing Comparison →](https://anthonymatosaudio.github.io/structured-literacy-voice-production/tts-narration-editing-comparison.html)
 
@@ -90,6 +90,18 @@ See the [Voice Production Quality Review Framework](docs/voice-production-qualit
 </p>
 
 **Playable before-and-after narration** with Final Cut Pro screenshots showing pacing refinement, breath editing, and alternate-generation assembly.
+
+### [Multi-Stage Dialogue Cleanup Comparison →](https://anthonymatosaudio.github.io/structured-literacy-voice-production/multi-stage-dialogue-cleanup-comparison.html)
+
+<p align="center">
+  <a href="https://anthonymatosaudio.github.io/structured-literacy-voice-production/multi-stage-dialogue-cleanup-comparison.html">
+    <img src="assets/images/multi-stage-dialogue-cleanup/02-independent-reading-logic-processing-overview.png"
+         alt="Logic Pro session showing the independent-reading dialogue comparison and processing workflow"
+         width="640">
+  </a>
+</p>
+
+**Playable three-stage dialogue comparison** with Logic Pro and Final Cut Pro screenshots showing high-pass filtering, light bus compression, and selective volume automation.
 
 ## Tools Used
 
@@ -106,8 +118,6 @@ See the [Voice Production Quality Review Framework](docs/voice-production-qualit
 ## Planned Additions
 
 This case study will be expanded with selected editing examples and production notes documenting key decisions in voice-clone recording, narration assembly, dialogue editing, cleanup, and final audiovisual integration.
-
-The next addition will be a multi-stage comparison of an independent-reading portion of the lesson, documenting Logic Pro comping and processing, the trade-off between improved vocal presence and low-level mouth noise made more noticeable after compression, and selective cleanup in Final Cut Pro.
 
 ## Portfolio Note
 
