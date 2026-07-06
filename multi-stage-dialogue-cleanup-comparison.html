@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="A multi-stage dialogue-processing comparison documenting compression trade-offs and selective volume cleanup within an instructional-media workflow.">
+
+  <title>Multi-Stage Dialogue Cleanup Comparison</title>
+
+  <style>
+    :root {
+      --page-background: #f5f6f8;
+      --surface: #ffffff;
+      --text: #1f2328;
+      --secondary-text: #59636e;
+      --border: #d8dee4;
+      --accent: #0969da;
+      --soft-accent: #eef5ff;
+      --quote-border: #8c959f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page-background);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(960px, calc(100% - 32px));
+      margin: 40px auto;
+      padding: 48px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 8px 28px rgba(31, 35, 40, 0.08);
+    }
+
+    header {
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 28px;
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .eyebrow {
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 5vw, 3.15rem);
+      line-height: 1.12;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 1.55rem;
+      line-height: 1.25;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 1.12rem;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    .lede {
+      max-width: 760px;
+      margin: 0;
+      color: var(--secondary-text);
+      font-size: 1.12rem;
+    }
+
+    section {
+      padding-top: 38px;
+    }
+
+    blockquote {
+      margin: 0;
+      padding: 18px 22px;
+      background: #f6f8fa;
+      border-left: 4px solid var(--quote-border);
+      border-radius: 0 8px 8px 0;
+      color: #3d444d;
+      font-size: 1.04rem;
+    }
+
+    .comparison-note {
+      padding: 14px 16px;
+      background: var(--soft-accent);
+      border: 1px solid #b6d7ff;
+      border-radius: 8px;
+      color: #344054;
+      font-size: 0.95rem;
+    }
+
+    .audio-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 22px;
+    }
+
+    .audio-card {
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #fbfcfd;
+    }
+
+    .audio-card.final-stage {
+      grid-column: 1 / -1;
+    }
+
+    .audio-card p {
+      color: var(--secondary-text);
+      font-size: 0.95rem;
+    }
+
+    audio {
+      display: block;
+      width: 100%;
+      margin: 18px 0 12px;
+    }
+
+    .file-link {
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .file-link:hover {
+      text-decoration: underline;
+    }
+
+    figure {
+      margin: 22px 0 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      color: var(--secondary-text);
+      font-size: 0.9rem;
+    }
+
+    .result {
+      margin-top: 38px;
+      padding: 28px;
+      background: #f6f8fa;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    .result h2 {
+      margin-top: 0;
+    }
+
+    footer {
+      margin-top: 42px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--secondary-text);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 20px, 960px);
+        margin: 10px auto;
+        padding: 26px 20px;
+      }
+
+      .audio-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .audio-card.final-stage {
+        grid-column: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <a class="back-link" href="./">← Back to project overview</a>
+
+    <header>
+      <div class="eyebrow">Structured Literacy Voice Production</div>
+
+      <h1>Multi-Stage Dialogue Cleanup Comparison</h1>
+
+      <p class="lede">
+        An example of dialogue processing, compression trade-offs, and
+        selective volume cleanup within an instructional-media workflow.
+      </p>
+    </header>
+
+    <section>
+      <h2>Context</h2>
+
+      <p>
+        ElevenLabs handled the main instructional narration effectively. For
+        the isolated phonemes and tightly controlled word readings used in this
+        portion of the lesson, I used human-recorded dialogue to gain more
+        direct control over pronunciation, timing, and spacing.
+      </p>
+
+      <p>
+        The selected excerpt comes from an independent-reading portion of the
+        lesson. The longer pauses between readings provide a useful basis for
+        comparing vocal presence, level consistency, and low-level mouth and
+        room noise across the three stages.
+      </p>
+    </section>
+
+    <section>
+      <h2>Selected Word Sequence</h2>
+
+      <blockquote>
+        “lit” · “got” · “shin” · “pot” · “rot” · “pin”
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>Audio Comparison</h2>
+
+      <p>
+        The comparison demonstrates two related changes across the same
+        excerpt. The first two files preserve the same comping, timing, fades,
+        and high-pass filtering, with the light bus-compression stage first
+        bypassed and then engaged. The resulting change in level and vocal
+        presence is retained as part of that processing. The third file
+        retains the increased vocal presence and level consistency from the
+        compression stage, then adds localized volume automation in Final Cut
+        Pro.
+      </p>
+
+      <p>
+        The post-selective-cleanup file received a uniform level adjustment
+        after export to keep its overall loudness close to the post-compression
+        version. Its internal automation remained unchanged, allowing the
+        cleanup itself to be compared more directly.
+      </p>
+
+      <p class="comparison-note">
+        <strong>Note:</strong> All three files use the same independent-reading
+        excerpt.
+      </p>
+
+      <div class="audio-grid">
+        <article class="audio-card">
+          <h3>1. Pre-Compression</h3>
+
+          <p>
+            Comped and high-pass-filtered student dialogue before light bus
+            compression was applied.
+          </p>
+
+          <audio controls preload="metadata">
+            <source
+              src="assets/audio/multi-stage-dialogue-cleanup/01-independent-reading-pre-compression.mp3"
+              type="audio/mpeg">
+            Your browser does not support embedded audio playback.
+          </audio>
+
+          <a
+            class="file-link"
+            href="assets/audio/multi-stage-dialogue-cleanup/01-independent-reading-pre-compression.mp3">
+            Open pre-compression audio file
+          </a>
+        </article>
+
+        <article class="audio-card">
+          <h3>2. Post-Compression</h3>
+
+          <p>
+            Light bus compression increased vocal presence and stabilized
+            dialogue levels. The trade-off was that low-level mouth and room
+            noise became more noticeable in the pauses between words.
+          </p>
+
+          <audio controls preload="metadata">
+            <source
+              src="assets/audio/multi-stage-dialogue-cleanup/02-independent-reading-post-compression.mp3"
+              type="audio/mpeg">
+            Your browser does not support embedded audio playback.
+          </audio>
+
+          <a
+            class="file-link"
+            href="assets/audio/multi-stage-dialogue-cleanup/02-independent-reading-post-compression.mp3">
+            Open post-compression audio file
+          </a>
+        </article>
+
+        <article class="audio-card final-stage">
+          <h3>3. Post-Selective Cleanup</h3>
+
+          <p>
+            The compressed passage after selected mouth noises between words
+            were reduced using localized volume automation in Final Cut Pro.
+          </p>
+
+          <audio controls preload="metadata">
+            <source
+              src="assets/audio/multi-stage-dialogue-cleanup/03-independent-reading-post-selective-cleanup.mp3"
+              type="audio/mpeg">
+            Your browser does not support embedded audio playback.
+          </audio>
+
+          <a
+            class="file-link"
+            href="assets/audio/multi-stage-dialogue-cleanup/03-independent-reading-post-selective-cleanup.mp3">
+            Open post-selective-cleanup audio file
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Logic Pro Processing Overview</h2>
+
+      <p>
+        The lesson demonstration’s human-recorded dialogue was recorded and
+        processed in a Logic Pro session with the lesson video present for
+        synchronization. This overview keeps the broader session layout
+        visible while highlighting the independent-reading range, student
+        dialogue channel strip, and waveform detail used for the comparison.
+      </p>
+
+      <figure>
+        <img
+          src="assets/images/multi-stage-dialogue-cleanup/02-independent-reading-logic-processing-overview.png"
+          alt="Logic Pro session showing the independent-reading comparison range, synchronized movie track, student dialogue, and visible channel processing."
+          loading="lazy">
+
+        <figcaption>
+          Logic Pro overview showing the selected independent-reading range,
+          synchronized movie track, student dialogue, and processing inserts.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>High-Pass Filtering</h2>
+
+      <p>
+        A 12 dB-per-octave high-pass filter at approximately 85 Hz was applied
+        to the student channel to reduce unnecessary low-frequency rumble,
+        while the remainder of the EQ curve was left flat to keep the broader
+        tonal balance largely unchanged.
+      </p>
+
+      <figure>
+        <img
+          src="assets/images/multi-stage-dialogue-cleanup/03-independent-reading-student-high-pass-filter.png"
+          alt="Logic Pro Channel EQ showing a high-pass filter applied to the student dialogue channel."
+          loading="lazy">
+
+        <figcaption>
+          Student-channel high-pass filtering used for low-frequency cleanup
+          before the bus-processing stage.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Compression Trade-Off</h2>
+
+      <p>
+        Light compression on the Logic Pro Stereo Out increased vocal presence
+        and reduced level variation across the short readings. It also made
+        some residual mouth noises in the quieter spaces between words more
+        noticeable on detailed playback.
+      </p>
+
+      <p>
+        I retained the compression because its contribution to presence and
+        consistency was useful, then addressed the remaining artifacts
+        selectively after the dialogue was integrated into the finished
+        audiovisual timeline.
+      </p>
+
+      <figure>
+        <img
+          src="assets/images/multi-stage-dialogue-cleanup/04-independent-reading-master-bus-compression.png"
+          alt="Logic Pro Stereo Out bus compressor showing project-specific settings and active gain reduction during the independent-reading passage."
+          loading="lazy">
+
+        <figcaption>
+          The Logic Pro Stereo Out bus compressor during playback, showing the
+          project-specific settings and active gain reduction.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Final Cut Pro Selective Cleanup</h2>
+
+      <p>
+        After bringing the processed dialogue into Final Cut Pro, I used
+        localized volume keyframes to target individual mouth noises in the
+        pauses between words.
+      </p>
+
+      <p>
+        This reduced the most noticeable mouth noises while minimizing shifts
+        in room tone and preserving the adjacent phonemes and words.
+      </p>
+
+      <figure>
+        <img
+          src="assets/images/multi-stage-dialogue-cleanup/01-independent-reading-volume-automation-fcp.png"
+          alt="Final Cut Pro timeline showing localized volume keyframes and smooth automation changes between words in the independent-reading passage."
+          loading="lazy">
+
+        <figcaption>
+          Final Cut Pro volume automation showing targeted reductions between
+          the independent word readings.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="result">
+      <h2>Result</h2>
+
+      <p>
+        Compression improved vocal presence and level consistency, but it also
+        brought low-level mouth and room noise forward. Rather than removing
+        the compression, I addressed those artifacts selectively. The final
+        version keeps the dialogue present and consistent while making the
+        pauses between readings cleaner and less distracting.
+      </p>
+    </section>
+
+    <footer>
+      Prepared as part of an independent portfolio case study documenting AI-assisted voice production, dialogue editing, and audio post-production.
+    </footer>
+  </main>
+</body>
+</html>
