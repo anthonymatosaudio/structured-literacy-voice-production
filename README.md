@@ -4,6 +4,15 @@ This audio-production case study documents how I combined ElevenLabs-generated n
 
 The featured project, *Structured Literacy in Practice: Demonstrating a Lesson Sequence (Mini-Lesson Format)*, is one of two Science of Reading videos developed for the San Juan College Teacher Education Department’s educator-preparation resource library.
 
+## What This Project Demonstrates
+
+* Translating instructional goals into deliberate voice, pacing, pronunciation, and media decisions that support learner comprehension
+* Creating, testing, and refining a custom voice clone for structured instructional narration
+* Producing long-form narration that remains clear, cohesive, and consistent across extended content
+* Applying human editorial judgment to evaluate AI-generated speech for naturalness, accuracy, continuity, and listener comprehension
+* Integrating human-recorded phonemes when instructional accuracy required a more precise approach than synthesized speech alone
+* Delivering polished instructional media within defined quality standards and client requirements
+
 ## Project Context
 
 **Client:** San Juan College Teacher Education Department<br>
@@ -111,16 +120,12 @@ See the [Voice Production Quality Review Framework](docs/voice-production-qualit
 * Final Cut Pro
 * Logic Pro
 
-## Portfolio Links
+## Links
 
 - [Structured Literacy in Practice: Demonstrating a Lesson Sequence (Mini-Lesson Format)](https://youtu.be/Nal13b7Ncxs)
 - [Explicit Instruction in Structured Literacy](https://youtu.be/CZoKI_4M-xM)
 - [LinkedIn Profile](https://www.linkedin.com/in/anthonymatosaudio/)
 
-## Planned Additions
-
-This case study will be expanded with selected editing examples and production notes documenting key decisions in voice-clone recording, narration assembly, dialogue editing, cleanup, and final audiovisual integration.
-
 ## Portfolio Note
 
-This is an independent portfolio case study documenting my production process. It does not imply endorsement by San Juan College.
+This portfolio case study was created independently to document my production workflow, editorial decisions, and quality-review process. It does not imply endorsement by San Juan College.
